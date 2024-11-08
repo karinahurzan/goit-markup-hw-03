@@ -35,36 +35,38 @@ img {
 
 .container {
   max-width: 1158px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: 140px;
-  margin-right: 140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-navigation {
   display: flex;
   flex-direction: row;
-  gap: 76px;
 }
 
 .nav-list {
   display: flex;
   flex-direction: row;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .address-list {
   display: flex;
   flex-direction: row;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .logo {
@@ -75,6 +77,8 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   font-weight: 700;
+  margin-right: 76px;
+  padding: 24px 0;
 }
 
 .logo-span-1 {
@@ -111,9 +115,8 @@ address {
 
 .main-page {
   background-color: #2e2f42;
-  text-align: center;
   height: 600px;
-  padding-top: 188px;
+  padding: 188px 0;
 }
 
 .main-page-title {
@@ -122,6 +125,8 @@ address {
   letter-spacing: 0.02em;
   color: #ffffff;
   font-weight: 700;
+  max-width: 496px;
+  text-align: center;
 }
 
 .main-page-button {
@@ -138,6 +143,8 @@ address {
   min-height: 56px;
   border: none;
   border-radius: 4px;
+  display: block;
+  justify-content: center;
 }
 
 .main-page-button:hover,
@@ -145,10 +152,15 @@ address {
   background-color: #404bbf;
 }
 
+.utility-title {
+  visibility: hidden;
+}
+
 .utility-link {
-  display: flex;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  /* display: flex;
   gap: 8px;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 .utility-list {
@@ -163,6 +175,7 @@ address {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .utility-text {
@@ -185,19 +198,24 @@ address {
   font-weight: 700;
   color: #2e2f42;
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .our-team-list {
   display: flex;
   flex-direction: row;
-  margin-top: 72px;
-  justify-content: space-between;
+  gap: 24px;
+}
+
+.our-team-info {
+  padding: 32px 0;
 }
 
 .our-team-card {
   background-color: #ffffff;
   width: 264px;
   height: 380px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-subtitle {
@@ -207,7 +225,7 @@ address {
   color: #2e2f42;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .our-team-description {
@@ -217,7 +235,6 @@ address {
   color: #434455;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 8px;
 }
 
 .our-portfolio-title {
@@ -228,21 +245,29 @@ address {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .our-portfolio-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 24px;
   margin-top: 72px;
   justify-content: space-between;
 }
 
 .our-portfolio-card {
-  width: 360px;
+  width: calc((100% - 48px) / 3);
   height: 420px;
   border: 1px solid #e7e9fc;
+}
+
+.our-portfolio-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .our-portfolio-subtitle {
@@ -251,8 +276,6 @@ address {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-left: 16px;
 }
 
 .our-portfolio-text {
@@ -292,4 +315,16 @@ address {
   display: flex;
   gap: 16px;
   flex-direction: column;
+}
+
+.logo {
+  font-size: 18px;
+  font-family: "Raleway";
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 16px;
 }
