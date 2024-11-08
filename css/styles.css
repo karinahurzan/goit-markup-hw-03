@@ -53,12 +53,16 @@ img {
 .header-navigation {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .nav-list {
   display: flex;
   flex-direction: row;
   gap: 40px;
+}
+
+.nav-link {
   padding: 24px 0;
 }
 
@@ -67,6 +71,7 @@ img {
   flex-direction: row;
   gap: 40px;
   padding: 24px 0;
+  align-items: center;
 }
 
 .logo {
@@ -152,8 +157,18 @@ address {
   background-color: #404bbf;
 }
 
-.utility-title {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .utility-link {
@@ -252,6 +267,7 @@ address {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  column-gap: 24px;
   row-gap: 24px;
   margin-top: 72px;
   justify-content: space-between;
@@ -276,6 +292,7 @@ address {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .our-portfolio-text {
@@ -309,12 +326,6 @@ address {
   font-weight: 400;
   color: #f4f4fd;
   letter-spacing: 0.02em;
-}
-
-.footer-container {
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
 }
 
 .logo-footer {
