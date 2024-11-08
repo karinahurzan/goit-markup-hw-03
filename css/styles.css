@@ -4,12 +4,67 @@ body {
   background-color: #ffffff;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.header-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 76px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .logo {
@@ -56,6 +111,9 @@ address {
 
 .main-page {
   background-color: #2e2f42;
+  text-align: center;
+  height: 600px;
+  padding-top: 188px;
 }
 
 .main-page-title {
@@ -64,7 +122,6 @@ address {
   letter-spacing: 0.02em;
   color: #ffffff;
   font-weight: 700;
-  text-align: center;
 }
 
 .main-page-button {
@@ -76,11 +133,28 @@ address {
   line-height: 1.5;
   font-weight: 500;
   cursor: pointer;
+  margin-top: 48px;
+  min-width: 169px;
+  min-height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .main-page-button:hover,
 .main-page-button:focus {
   background-color: #404bbf;
+}
+
+.utility-link {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.utility-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
 .utility-subtitle {
@@ -113,8 +187,17 @@ address {
   text-align: center;
 }
 
+.our-team-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 72px;
+  justify-content: space-between;
+}
+
 .our-team-card {
   background-color: #ffffff;
+  width: 264px;
+  height: 380px;
 }
 
 .our-team-subtitle {
@@ -124,6 +207,7 @@ address {
   color: #2e2f42;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-top: 32px;
 }
 
 .our-team-description {
@@ -133,6 +217,7 @@ address {
   color: #434455;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-top: 8px;
 }
 
 .our-portfolio-title {
@@ -145,13 +230,29 @@ address {
   text-transform: capitalize;
 }
 
+.our-portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 72px;
+  justify-content: space-between;
+}
+
+.our-portfolio-card {
+  width: 360px;
+  height: 420px;
+  border: 1px solid #e7e9fc;
+}
+
 .our-portfolio-subtitle {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
   color: #2e2f42;
-  text-align: center;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-left: 16px;
 }
 
 .our-portfolio-text {
@@ -160,11 +261,14 @@ address {
   letter-spacing: 0.02em;
   font-weight: 400;
   color: #434455;
-  text-align: center;
+  padding-top: 8px;
+  padding-left: 16px;
 }
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logo-span {
@@ -182,4 +286,10 @@ address {
   font-weight: 400;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+}
+
+.footer-container {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
 }
