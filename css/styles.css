@@ -150,7 +150,8 @@ address {
   min-height: 56px;
   border: none;
   border-radius: 4px;
-  text-align: center;
+  display: block;
+  margin: 48px auto 0 auto;
 }
 
 .main-page-button:hover,
