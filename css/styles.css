@@ -151,7 +151,7 @@ address {
   border: none;
   border-radius: 4px;
   display: block;
-  margin: 48px auto 0 auto;
+  /* margin: 48px auto 0 auto; */
 }
 
 .main-page-button:hover,
