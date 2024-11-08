@@ -122,6 +122,8 @@ address {
   background-color: #2e2f42;
   height: 600px;
   padding: 188px 0;
+  display: flex;
+  text-align: center;
 }
 
 .main-page-title {
@@ -148,8 +150,7 @@ address {
   min-height: 56px;
   border: none;
   border-radius: 4px;
-  display: block;
-  justify-content: center;
+  text-align: center;
 }
 
 .main-page-button:hover,
@@ -274,8 +275,6 @@ address {
 
 .our-portfolio-card {
   width: calc((100% - 48px) / 3);
-  height: 420px;
-  border: 1px solid #e7e9fc;
 }
 
 .our-portfolio-info {
