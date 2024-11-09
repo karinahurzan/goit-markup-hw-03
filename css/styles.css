@@ -62,15 +62,9 @@ img {
   gap: 40px;
 }
 
-.nav-link {
-  padding: 24px 0;
-}
-
 .address-list {
   display: flex;
-  flex-direction: row;
   gap: 40px;
-  padding: 24px 0;
   align-items: center;
 }
 
@@ -96,6 +90,8 @@ img {
   color: #2e2f42;
   font-weight: 500;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 
 .address-link {
@@ -105,6 +101,8 @@ img {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.02em;
+  display: block;
+  padding: 24px 0;
 }
 
 address {
@@ -120,10 +118,7 @@ address {
 
 .main-page {
   background-color: #2e2f42;
-  height: 600px;
   padding: 188px 0;
-  display: flex;
-  text-align: center;
 }
 
 .main-page-title {
@@ -134,6 +129,7 @@ address {
   font-weight: 700;
   max-width: 496px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .main-page-button {
@@ -151,7 +147,7 @@ address {
   border: none;
   border-radius: 4px;
   display: block;
-  /* margin: 48px auto 0 auto; */
+  margin: 0 auto;
 }
 
 .main-page-button:hover,
@@ -230,8 +226,7 @@ address {
 
 .our-team-card {
   background-color: #ffffff;
-  width: 264px;
-  height: 380px;
+  width: calc((100% - 3 * 24) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -270,8 +265,6 @@ address {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  margin-top: 72px;
-  justify-content: space-between;
 }
 
 .our-portfolio-card {
@@ -282,7 +275,6 @@ address {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .our-portfolio-subtitle {
@@ -300,8 +292,6 @@ address {
   letter-spacing: 0.02em;
   font-weight: 400;
   color: #434455;
-  padding-top: 8px;
-  padding-left: 16px;
 }
 
 .footer {
@@ -325,6 +315,7 @@ address {
   font-weight: 400;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 
 .logo-footer {
